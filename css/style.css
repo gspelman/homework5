@@ -55,22 +55,24 @@ footer{
 
 @-webkit-keyframes logo_wiggle{
   /*Your code here.*/
-  /* width: 25px;
-  height: 420px;
-  position: relative;
-  animation: logo_wiggle 15s; */
+  
+  from {width: 25px;}
+  to {width: 420px;}
 
 }
 
 @keyframes logo_wiggle{
   /*Your code here.*/
-  /*from {top: 25px;}
-  to {top: 420px;}*/
+  from {width: 25px;}
+  to {width: 420px;}
 
 } 
 
 #logo{
    /*Your code here.*/
+   animation-name: logo_wiggle;
+  animation-duration: 15s;
+  -webkit-animation-name: logo_wiggle;
 
  
 }
@@ -94,10 +96,7 @@ footer{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
-  
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+ 
   flex-basis: 400px;
  
 
@@ -208,16 +207,13 @@ header{
   /* Navbar */
   header{
     /*Your code here again.*/  
-    display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    justify-content: space-between;
   }
 
   .nav_links{
     /*Your code here again.*/  
-    display: flex;
     flex-direction: row;
-    align-items: flex-end;
     
   }
 
@@ -240,3 +236,10 @@ header{
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce) {
+  
+  #logo{
+    animation: none;
+  }
+  
+}
