@@ -70,7 +70,7 @@ footer{
 
 #logo{
    /*Your code here.*/
-   animation-name: logo_wiggle;
+  animation-name: logo_wiggle;
   animation-duration: 15s;
   -webkit-animation-name: logo_wiggle;
 
@@ -98,8 +98,6 @@ footer{
  
   flex-basis: 400px;
  
-
-  }
 }
 
 .card > header{
