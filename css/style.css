@@ -219,19 +219,28 @@ header{
     flex-basis: 200px;
   }
   /*Your code here again.*/
-  img{
+  /*You will want four selectors*/
+
+  body {
+    background: none;
+  }
+
+  .pricing {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .gallery {
     display: none;
   }
-  
-  /*You will want four selectors*/  
+
+  #gallery {
+    display: none;
+  }
 }
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
 @media screen and (prefers-reduced-motion: reduce) {
-  
-  #logo{
-    animation: none;
-  }
-  
+  #logo {animation: none}
 }
